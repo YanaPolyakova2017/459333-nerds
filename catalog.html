@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/index-logo.svg" width="50" height="50"
+				alt="Логотип Нердс">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="studio.html">СТУДИЯ</a></li>
+				<li><a href="clients.html">КЛИЕНТЫ</a></li>
+				<li><a href="shop.html">МАГАЗИН</a></li>
+				<li><a href="contacts.html">КОНТАКТЫ</a></li>
+			</ul>
+			<ul class="basket-navigation">
+				<li><a href="basket.html">КОРЗИНА</a></li>
+			</ul>
+		</nav>	
+	</header>
+	<main class="container">
+		<h1 class="page-title">МАГАЗИН ГОТОВЫХ ШАБЛОНОВ</h1>
+		
+		
+		
+		<section class="filters">
+			<h2 class="visualu-hidden">Фильтр товаров</h2>
+			<form class="filter" method="get" action="https://echo.htmlacademy.ru">
+			<fieldset>
+			<legend>СТОИМОСТЬ</legend>
+			<input type="range" min="0" max="15000" step="1" value="50"> 
+			</fieldset>
+			<fieldset>
+				<legend>СЕТКА</legend>
+				<ul>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="adaptive">
+					Адаптивная
+					</li>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="fixed" checked>
+					Фиксированная
+					</li>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-radio" type="radio" name="grid" value="rubber">
+					Резиновая
+					</li>
+				</ul>
+			</fieldset>
+			<fieldset>	
+				<legend>ОСОБЕННОСТИ</legend>
+				<ul>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="slider" checked>
+					Слайдер
+					</li>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="block-features" checked>
+					Блок преимуществ
+					</li>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="news">
+					Новости
+					</li>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="gallery">
+					Галерея
+					</li>
+					<li class="filter-option">
+					<input class="visually-hidden filter-input filter-input-checkbox" type="checkbox" name="busket" checked>
+					Корзина
+					</li>
+				</ul>
+			</fieldset>
+			<button type="submit" class="filter-button button">ПОКАЗАТЬ</button>
+			</form>
+		</section>
+		
+		<section class="catalog">
+			<h2 class="visually-hidden">СПИСОК САЙТОВ</h2>
+			<ul class="catalog-list">
+				<li class="catalog-item">
+					<h3>
+						<a href="catalog-item.html">
+						<p class="catalog-category">SEDONA</p>
+						</a>
+					</h3>
+						<p class="catalog-item-image"
+						<a href="catalog-item.html">
+						<img src="img/site-1.jpg" width="220" height="165" alt="SEDONA">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<h3>
+						<a href="catalog-item.html">
+						<p class="catalog-category">PINK</p>
+						</a>
+					</h3>
+						<p class="catalog-item-image"
+						<a href="catalog-item.html">
+						<img src="img/site-2.jpg" width="220" height="165" alt="PINK">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<h3>
+						<a href="catalog-item.html">
+						<p class="catalog-category">Барбершоп "Бородинский"</p>
+						</a>
+					</h3>
+						<p class="catalog-item-image"
+						<a href="catalog-item.html">
+						<img src="img/site-3.jpg" width="220" height="165" alt="Барбершоп «Бородинский»">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<h3>
+						<a href="catalog-item.html">
+						<p class="catalog-category">MISHKA</p>
+						</a>
+					</h3>
+						<p class="catalog-item-image"
+						<a href="catalog-item.html">
+						<img src="img/site-4.jpg" width="220" height="165" alt="MISHKA">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<h3>
+						<a href="catalog-item.html">
+						<p class="catalog-category">A+</p>
+						</a>
+					</h3>
+						<p class="catalog-item-image"
+						<a href="catalog-item.html">
+						<img src="img/site-5.jpg" width="220" height="165" alt="A+">
+						</a>
+					</p>
+				</li>
+				<li class="catalog-item">
+					<h3>
+						<a href="catalog-item.html">
+						<p class="catalog-category">КВАСТ</p>
+						</a>
+					</h3>
+						<p class="catalog-item-image"
+						<a href="catalog-item.html">
+						<img src="img/site-5.jpg" width="220" height="165" alt="КВАСТ">
+						</a>
+					</p>
+				</li>
+			
+			</ul>
+			<ul class="pagenation-list">
+				<li class="pagenation-item pagination-item-current"><a>1</a></li>
+				<li class="pagenation-item"><a href="#">2</li>
+				<li class="pagenation-item"><a href="#">3</li>
+				<li class="pagenation-item"><a href="#">4</li>
+			</ul>
+		</section>
+	</main>
+	<footer class="main-footer">
+		<p class="footer-contacts">
+		NERDS DESIGN STUDIO<br>
+		191186, Санкт-Петербург, Б.Конюшенная, д.19/8<br>
+		<a href="map.html">Как нас найти</a>
+		тел. +7(812) 275-75-75
+		</p>
+		<div class="footer-social">
+			<p><b>Давайте дружить, это выгодно!</b></p>
+			<p>Cкидка 10% для друзей из социальных сетей.</p>
+			<ul>
+				<li><a class="social-bottum" href=#>В контакте</a></li>
+				<li><a class="social-bottum" href=#>Фейсбук</a></li>
+				<li><a class="social-bottum" href=#>Инстаграм</a></li>
+			</ul>
+		</div>
+	</footer>
+	</body>
+	</html>
+	
