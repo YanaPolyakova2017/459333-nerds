@@ -18,9 +18,11 @@
           <li><a href="contacts.html">Контакты</a></li>
         </ul>
         <ul class="user-navigation">
-          <li><a href="basket.html">Корзина</a></li>
+          <li class="basket-link">
+            <a class="basket-link" href="basket.html">Корзина</a>
+          </li>
         </ul>
-      </nav>	
+      </nav>
     </header>
     <main class="container">
       <h1 class="page-title">Магазин готовых шаблонов</h1>
@@ -68,7 +70,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>	
+          <fieldset>
             <legend>Особенности</legend>
             <ul>
               <li class="filter-option">
@@ -102,98 +104,44 @@
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/site-1.jpg" width="220" height="165" alt="Sedona">
+                <img src="img/site-1.png" width="360" height="576" alt="Sedona">
               </a>
             </p>
-            <section class="modal modal-site">
-              <h3>
-                <a href="catalog-item.html">
-                  <span class="catalog-category">Sedona</span>
-                  <span class="catalog-item-title">Информационный сайт для туристов</span>
-                </a>
-              </h3>
-              <a class="button" href="#">9 900 Pуб</a>
-            </section>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/site-2.jpg" width="220" height="165" alt="Pink">
+                <img src="img/site-2.png" width="360" height="576" alt="Pink">
               </a>
             </p>  
-            <section class="modal modal-site">
-              <h3>
-                <a href="catalog-item.html">
-                  <span class="catalog-category">Pink</span>
-                  <span class="catalog-item-title">Продуктовый лендинг приложений для iOS и Android</span>
-                </a>
-              </h3>
-              <a class="button" href="#">9 900 Pуб</a>
-            </section>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/site-3.jpg" width="220" height="165" alt="Barbershop">
+                <img src="img/site-3.png" width="360" height="576" alt="Barbershop">
               </a>
             </p>
-            <section class="modal modal-site">
-              <h3>
-                <a href="catalog-item.html">
-                  <span class="catalog-category">Barbershop</span>
-                  <span class="catalog-item-title">Сайт салоны красоты. Для мужчин, да.</span>
-                </a>
-              </h3>
-              <a class="button" href="#">9 900 Pуб</a>
-            </section>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/site-4.jpg" width="220" height="165" alt="Mishka">
+                <img src="img/site-4.png" width="360" height="576" alt="Mishka">
               </a>
             </p>
-            <section class="modal modal-site">
-              <h3>
-                <a href="catalog-item.html">
-                  <span class="catalog-category">Mishka</span>
-                  <span class="catalog-item-title">Интернет-магазин вязаных игрушек</span>
-                </a>
-              </h3>
-              <a class="button" href="#">9 900 Pуб</a>
-            </section>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/site-5.jpg" width="220" height="165" alt="A plus">
+                <img src="img/site-5.png" width="360" height="576" alt="A plus">
               </a>
             </p>
-            <section class="modal modal-site">
-              <h3>
-                <a href="catalog-item.html">
-                 <span class="catalog-category">A plus</span>
-                  <span class="catalog-item-title">Лендинг курсов повышения квалификации</span>
-                </a>
-              </h3>
-              <a class="button" href="#">9 900 Pуб</a>
-             </section>
           </li>
           <li class="catalog-item">
             <p class="catalog-item-image">
               <a href="catalog-item.html">
-                <img src="img/site-6.jpg" width="220" height="165" alt="Кваст">
+                <img src="img/site-6.png" width="360" height="576" alt="Кваст">
               </a>
             </p>
-              <section class="modal modal-site">
-              <h3>
-                <a href="catalog-item.html">
-                  <span class="catalog-category">Кваст</span>
-                  <span class="catalog-item-title">Промо-сайт производителя крафтового кваса</span>
-                </a>
-              </h3>
-              <a class="button" href="#">9 900 Pуб</a>
-            </section>
           </li>
         </ul>
         <ul class="pagination-list">
@@ -211,26 +159,8 @@
         тел. +7(812) 275-75-75</p>
         <button type="submit" class="footer-contacts button">Напишите нам</button>
       </div>
-      <a href="map.html">Как нас найти</a>
-      <section class="modal modal-write">
-        <h2>Напишите нам</h2>
-        <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
-          <div class="write-us-item">
-            Ваше имя:
-            <input type="text" name="form-name" value="" placeholder="Представьтесь, пожалуйста">
-          </div>
-          <div class="write-us-item">
-            Ваш e-mail:
-            <input type="email" name="form-mail" value="" placeholder="Для отправки ответа">
-          </div>
-          <div class="write-us-item">
-            Текст письма:
-          <input type="text" name="form-text" value="" placeholder="В свободной форме">
-          </div>
-          <button class="button" type="submit">Отправить</button>
-        </form>
-        <span class="modal-close">x</span>
-      </section>
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <a href="map.html"><img src="img/map.png" width="1440" height="416" alt="191186, Санкт-Петербург, Б.Конюшенная, д.19/8"></a>
       <div class="footer-social">
         <ul>
           <li><a class="social-bottum" href=#>В контакте</a></li>
@@ -241,5 +171,78 @@
         <p>Cкидка 10% для друзей из социальных сетей.</p>
       </div>
     </footer>
+    <section class="modal modal-write">
+      <h2>Напишите нам</h2>
+      <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
+        <div class="write-us-item">
+          <label for="form-name">Ваше имя:</label>
+          <input id="form-name" type="text" name="form-name" value="" placeholder="Представьтесь, пожалуйста">
+        </div>
+        <div class="write-us-item">
+          <label for="form-mail">Ваш e-mail:</label>
+          <input id="form-mail" type="email" name="form-mail" value="" placeholder="Для отправки ответа">
+        </div>
+        <div class="write-us-item">
+          <label for="form-text">Текст письма:</label>
+          <input id="form-text" type="text" name="form-text" value="" placeholder="В свободной форме">
+        </div>
+        <button class="button" type="submit">Отправить</button>
+      </form>
+      <button class="modal-close" type="button">Закрыть</button>
+    </section>
+    <section class="modal modal-site1">
+      <h3>
+        <a href="catalog-item.html">
+          <span class="catalog-category">Sedona</span>
+          <span class="catalog-item-title">Информационный сайт для туристов</span>
+        </a>
+      </h3>
+      <a class="button" href="#">9 900 Pуб</a>
+    </section>
+    <section class="modal modal-site2">
+      <h3>
+        <a href="catalog-item.html">
+          <span class="catalog-category">Pink</span>
+          <span class="catalog-item-title">Продуктовый лендинг приложений для iOS и Android</span>
+        </a>
+      </h3>
+      <a class="button" href="#">9 900 Pуб</a>
+    </section>
+    <section class="modal modal-site3">
+      <h3>
+        <a href="catalog-item.html">
+          <span class="catalog-category">Barbershop</span>
+          <span class="catalog-item-title">Сайт салоны красоты. Для мужчин, да.</span>
+        </a>
+      </h3>
+      <a class="button" href="#">9 900 Pуб</a>
+    </section>
+    <section class="modal modal-site4">
+      <h3>
+        <a href="catalog-item.html">
+          <span class="catalog-category">Mishka</span>
+          <span class="catalog-item-title">Интернет-магазин вязаных игрушек</span>
+        </a>
+      </h3>
+      <a class="button" href="#">9 900 Pуб</a>
+    </section>
+    <section class="modal modal-site5">
+      <h3>
+        <a href="catalog-item.html">
+          <span class="catalog-category">A plus</span>
+          <span class="catalog-item-title">Лендинг курсов повышения квалификации</span>
+        </a>
+      </h3>
+      <a class="button" href="#">9 900 Pуб</a>
+    </section>
+    <section class="modal modal-site6">
+      <h3>
+        <a href="catalog-item.html">
+          <span class="catalog-category">Кваст</span>
+          <span class="catalog-item-title">Промо-сайт производителя крафтового кваса</span>
+        </a>
+      </h3>
+      <a class="button" href="#">9 900 Pуб</a>
+    </section>
   </body>
 </html>
