@@ -1,10 +1,302 @@
 body {
-  font-family: "Roboto";
+  margin: 0;
+  padding: 0;
+  
+  font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000000;
+  color: #283136;
+  background-color: #ffffff;
 }
+
+a {
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+  display: block;
+  width: 240px;
+  height: 50px;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  background-color: #ffffff;
+  border: none;
+}
+
+
+.main-header: {
+  background-color: #eeeeee;
+}
+
+
+.main-navigation {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #eeeeee;
+}
+
+.main-navigation a:hover {
+  color: #ea565c;
+  background-color: #eeeeee;
+}
+
+.main-navigation a:focus {
+  color: #d1d1d1;
+  background-color: #eeeeee;
+}
+
+.site-navigation,
+.user-navigation {
+  list-style: none;
+}
+
+.site-navigation a,
+.user-navigation a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.site-navigation a:hover,
+.user-navigation a:hover, {
+  color: #ea565c;
+  background-color: #eeeeee;
+}
+
+.site-navigation a:focus,
+.user-navigation a:focus, {
+  color: #d1d1d1;
+  background-color: #eeeeee;
+}
+
+.features {
+  background-color: #eeeeee;
+}
+
+.features b {
+  font-size: 55px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: none;
+}  
+
+.features-button,
+.servises1-button,
+.write-button {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #fb565a;
+   
+}
+
+.features-button:hover,
+.servises1-button:hover,
+.write-button:hover {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #e74246;
+   
+}
+
+.features-button:focus,
+.servises1-button:focus,
+.write-button:focus {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #e48789;
+  background-color: #d7373b;
+   
+}
+
+.servises2-button {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00ca74;
+   
+}
+
+.servises2-button:hover {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00bc6c;
+   
+}
+
+.servises2-button:focus {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #74c69c;
+  background-color: #00aa62;
+   
+}
+
+.servises3-button {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #efc84a;
+   
+}
+
+.servises3-button:hover {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ffffff;
+  background-color: #eab534;
+   
+}
+
+.servises3-button:focus {
+  font-size: 16px;
+  font-weight: 500;
+  text-align: center;
+  color: #ecc075;
+  background-color: #e5a722;
+   
+}
+
+.servises1-button,
+.servises2-button,
+.servises3-button {
+  width: 160px;
+}
+
+.write-button {
+  width: 260px;
+}
+
+
+.servises-list {
+  list-style: none;
+}
+
+.services-item {
+  text-align: center;
+}
+
+.services-item h3 {
+  font-size: 24px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+}
+	 
+.about-column-left h3,
+.about-column-right h3 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 500;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #ffffff;
+}
+
+.write-us-item input {
+  font: inherit;
+  
+  background-color: #ffffff;
+  border: 1px  solid #d7dcde;
+}
+
+.write-us-item input:hover {
+  font: inherit;
+  
+  background-color: #ffffff;
+  border: 1px  solid #b4b9bb;
+}
+
+.write-us-item input:focus {
+  font: inherit;
+  
+  background-color: #ffffff;
+  border: 1px  solid #000000;
+}
+
+.write-us-item input:invalid {
+  font: inherit;
+  
+  background-color: #ffffff;
+  border: 1px  solid #e74246;
+}
+
+
+.write-us label {
+  font-size: 16px;
+  font-weight:700;
+  line-height: 18px;
+  color: black;
+  background-color: #ffffff;
+}
+
+.write-us-item input[type="text"],
+.write-us-item input[type="email"] {
+  font-size: 16px;
+  line-height: 18px;
+  color: #d7dcde;
+  background-color: #ffffff;
+}
+
+
+.write-us-item input[type="text"]:hover,
+.write-us-item input[type="email"]:hover {
+  font-size: 16px;
+  line-height: 18px;
+  color: #b4b9bb;
+  background-color: #ffffff;
+}
+
+
+.write-us-item input[type="text"]:focus,
+.write-us-item input[type="email"]:focus {
+  font-size: 16px;
+  line-height: 18px;
+  color: #686868;
+  background-color: #ffffff;
+}
+
+.write-us-item input[type="text"]:invalid,
+.write-us-item input[type="email"]:invalid {
+  font-size: 16px;
+  line-height: 18px;
+  color: #ee8486;
+  background-color: #ffffff;
+}
+
+.social-bottum {
+  color: #ffffff;
+  background-color: #e1e1e1;	
+}
+
+.social-bottum:hover {
+  color: #ffffff;
+  background-color: #e74246;	
+}
+
+.social-bottum:focus {
+  color: #e37376;
+  background-color: #d7373b;	
+}
+
+
 
 h2 {
   font-size: 45px;
@@ -25,3 +317,28 @@ h4 {
   color: #000000;
   text-transform: uppercase;
 }
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0  0  0  0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+ul {
+  list-style: none;
+}
+
+.main-footer {
+  color: #283136;
+  background-color: #ffffff;
+}
+
+.footer-social b {
+  font-size: 36px;
+  font-weight: 700;	
+  color: #000000;
+}
+  
+	
+
