@@ -14,7 +14,7 @@ a {
   text-decoration: none;
 }
 
-button {
+.button {
   font: inherit;
   display: block;
   width: 240px;
@@ -27,15 +27,26 @@ button {
   border: none;
 }
 
+.visually-hidden {
+  position: absolute;
+  clip: rect(0  0  0  0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
 
 .main-header: {
   background-color: #eeeeee;
 }
 
+.main-header svg:hover {
+  fill:#303030;
+}
+
 
 .main-navigation {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 30px;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
@@ -81,6 +92,7 @@ button {
 
 .features b {
   font-size: 55px;
+  line-height: 55px;
   font-weight: 500;
   color: #000000;
   text-transform: none;
@@ -88,8 +100,10 @@ button {
 
 .features-button,
 .services1-button,
+.contacts-button,
 .write-button {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -99,8 +113,10 @@ button {
 
 .features-button:hover,
 .services1-button:hover,
+.contacts-button:hover,
 .write-button:hover {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -110,8 +126,10 @@ button {
 
 .features-button:focus,
 .services1-button:focus,
+.contacts-button:focus,
 .write-button:focus {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #e48789;
@@ -121,6 +139,7 @@ button {
 
 .services2-button {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -130,6 +149,7 @@ button {
 
 .services2-button:hover {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -139,6 +159,7 @@ button {
 
 .services2-button:focus {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #74c69c;
@@ -148,6 +169,7 @@ button {
 
 .services3-button {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -157,6 +179,7 @@ button {
 
 .services3-button:hover {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -166,6 +189,7 @@ button {
 
 .services3-button:focus {
   font-size: 16px;
+  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ecc075;
@@ -178,11 +202,6 @@ button {
 .services3-button {
   width: 160px;
 }
-
-.write-button {
-  width: 260px;
-}
-
 
 .services-list {
   list-style: none;
@@ -198,28 +217,270 @@ button {
 
 .services-item h3 {
   font-size: 24px;
-  line-height: 26px;
+  line-height: 30px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
 }
 
+.features ul,
 .about-column-left ul,
 .about-column-right ul,
 .main-partners ul,
-.footer-social ul {
+.footer-social ul,
+.catalog ul {
   list-style: none;
 }
-	 
+
+.about-column-left h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+}
+
 .about-column-left h3,
 .about-column-right h3 {
   font-size: 16px;
   line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+ 
+
+.page-title {
+  font-size: 55px;
+  line-height: 55px;
   font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.filters fieldset {
+  border: none
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 20px;
+}
+.filters legend {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-input:hover + label,
+.filter-input:focus + label {
+  color: #4d4d4d;
+}
+
+
+.filter-input:disabled + label {
+  color: #000000;
+  opacity: 0.5;
+}
+
+
+
+
+.sort a {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+
+.sort p {
+  font-size: 18px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  background-color: #eeeeee;
+   
+}
+
+.filter-button:hover {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #000000;
+  background-color: #dfdfdf;
+   
+}
+
+.filter-button:focus {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  text-align: center;
+  color: #acacac;
+  background-color: #d5d5d5;
+   
+}
+
+.catalog-item a {
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.catalog-item-description {
+  background-color: #eeeeee;
+}
+
+.catalog-category {
+  color: #000000;
+  background-color: #eeeeee;
+  font-size: 18x;
+  line-height: 30px;
+  font-weight: 700;	
+  text-transform: uppercase;
+}
+
+
+.catalog-item-title {
+  color: #283136;
+  background-color: #eeeeee;
+  font-size: 16x;
+  line-height: 18px;
+  font-weight: 400;	
+}
+
+.catalog .button {
+  display: block;
+  width: 200px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  border-radius: 2px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #fb565a;
+  
+ }
+
+
+.catalog .button:hover {
+  color: #ffffff;
+  background-color: #e74246;
+  
+}
+
+.catalog .button:focus {
+  color: #e48789;
+  background-color: #d7373b;
+   
+}
+
+.pagination-list {
+  list-style: none;
+}
+
+.pagination-item a {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #eeeeee;
+}
+
+.pagination-item a:hover {
+  background-color: #dfdfdf;
+}
+
+.pagination-item a:active {
+  color: #959595;
+  background-color: #d5d5d5;
+  border-top: 2px solid #bfbfbf;
+}
+.pagination-item-current {
+  color: #000000;
+  background-color: #ffffff;
+  border: 2px solid #dbdbdb;
+}
+
+.pagination-item-current a:hover,
+.pagination-item-current a:focus,
+.pagination-item-current a:active {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+
+
+
+.main-footer {
+  color: #283136;
+  background-color: #ffffff;
+}
+
+.main-footer h4 {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: 700;
   color: #000000;
   text-transform: uppercase;
   background-color: #ffffff;
 }
+
+.main-footer p {
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: 400;
+}
+
+.social-bottum {
+  color: #ffffff;
+  background-color: #e1e1e1;	
+}
+
+.social-bottum:hover {
+  color: #ffffff;
+  background-color: #e74246;	
+}
+
+.social-bottum:focus {
+  color: #e37376;
+  background-color: #d7373b;
+}
+
+.footer-social b {
+  font-size: 36px;
+  font-weight: 700;	
+  color: #000000;
+  background-color: #ffffff;
+}
+
+ .modal-write h2 {
+  font-size: 45px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #000000;
+  background-color: #ffffff;
+}  
 
 .write-us-item input {
   font: inherit;
@@ -249,7 +510,6 @@ button {
   border: 1px  solid #e74246;
 }
 
-
 .write-us label {
   font-size: 16px;
   font-weight:700;
@@ -266,7 +526,6 @@ button {
   background-color: #ffffff;
 }
 
-
 .write-us-item input[type="text"]:hover,
 .write-us-item input[type="email"]:hover {
   font-size: 16px;
@@ -274,7 +533,6 @@ button {
   color: #b4b9bb;
   background-color: #ffffff;
 }
-
 
 .write-us-item input[type="text"]:focus,
 .write-us-item input[type="email"]:focus {
@@ -291,63 +549,7 @@ button {
   color: #ee8486;
   background-color: #ffffff;
 }
-
-.social-bottum {
-  color: #ffffff;
-  background-color: #e1e1e1;	
-}
-
-.social-bottum:hover {
-  color: #ffffff;
-  background-color: #e74246;	
-}
-
-.social-bottum:focus {
-  color: #e37376;
-  background-color: #d7373b;	
-}
-
-
-
-h2 {
-  font-size: 45px;
-  font-weight: 500;
-  color: #000000;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-h4 {
-  font-size: 18px;
-  font-weight: 500;
-  color: #000000;
-  text-transform: uppercase;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0  0  0  0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
-
-.main-footer {
-  color: #283136;
-  background-color: #ffffff;
-}
-
-.footer-social b {
-  font-size: 36px;
-  font-weight: 700;	
-  color: #000000;
-}
   
-	
-
+  .write-button {
+  width: 260px;
+}
