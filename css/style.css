@@ -4,7 +4,6 @@ body {
   
   font-family: "Roboto", Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
   font-weight: 400;
   color: #283136;
   background-color: #ffffff;
@@ -46,7 +45,6 @@ a {
 
 .main-navigation {
   font-size: 16px;
-  line-height: 30px;
   font-weight: 500;
   color: #000000;
   text-transform: uppercase;
@@ -102,7 +100,6 @@ a {
 .contacts-button,
 .write-button {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -115,7 +112,6 @@ a {
 .contacts-button:hover,
 .write-button:hover {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -128,7 +124,6 @@ a {
 .contacts-button:focus,
 .write-button:focus {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #e48789;
@@ -140,7 +135,6 @@ a {
 
 .services2-button {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -150,7 +144,6 @@ a {
 
 .services2-button:hover {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -160,7 +153,6 @@ a {
 
 .services2-button:focus {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #74c69c;
@@ -170,7 +162,6 @@ a {
 
 .services3-button {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -180,7 +171,6 @@ a {
 
 .services3-button:hover {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ffffff;
@@ -190,7 +180,6 @@ a {
 
 .services3-button:focus {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #ecc075;
@@ -234,7 +223,6 @@ a {
 
 .about-column-left h2 {
   font-size: 45px;
-  line-height: 45px;
   font-weight: 500;
   color: #000000;
   background-color: #ffffff;
@@ -257,6 +245,13 @@ a {
   text-transform: uppercase;
 }
  
+ .about-column-right span {
+  font-size: 45px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
  
  
  
@@ -275,12 +270,11 @@ a {
 .filters ul,
 .filters-1 ul  {
   list-style: none;
-  line-height: 20px;
+  
 }
 .filters legend,
 .filters-1 legend {
   font-size: 18px;
-  line-height: 30px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
@@ -320,7 +314,6 @@ a {
 
 .filter-button {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #000000;
@@ -330,7 +323,6 @@ a {
 
 .filter-button:hover {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #000000;
@@ -340,7 +332,6 @@ a {
 
 .filter-button:focus {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   text-align: center;
   color: #acacac;
@@ -378,7 +369,6 @@ a {
   width: 200px;
   height: 50px;
   font-size: 16px;
-  line-height: 20px;
   font-weight: 400;
   border-radius: 2px;
   text-align: center;
@@ -452,7 +442,7 @@ a {
 .main-footer p {
   font-size: 16px;
   font-weight: 400;
-  color: #283136;
+  color: #989898;
   background-color: #ffffff;
 }
 
@@ -521,7 +511,6 @@ a {
 .write-us label {
   font-size: 16px;
   font-weight:700;
-  line-height: 18px;
   color: black;
   background-color: #ffffff;
 }
@@ -529,7 +518,6 @@ a {
 .write-us-item input[type="text"],
 .write-us-item input[type="email"] {
   font-size: 16px;
-  line-height: 18px;
   color: #d7dcde;
   background-color: #ffffff;
 }
@@ -537,7 +525,6 @@ a {
 .write-us-item input[type="text"]:hover,
 .write-us-item input[type="email"]:hover {
   font-size: 16px;
-  line-height: 18px;
   color: #b4b9bb;
   background-color: #ffffff;
 }
@@ -545,7 +532,6 @@ a {
 .write-us-item input[type="text"]:focus,
 .write-us-item input[type="email"]:focus {
   font-size: 16px;
-  line-height: 18px;
   color: #686868;
   background-color: #ffffff;
 }
@@ -553,7 +539,6 @@ a {
 .write-us-item input[type="text"]:invalid,
 .write-us-item input[type="email"]:invalid {
   font-size: 16px;
-  line-height: 18px;
   color: #ee8486;
   background-color: #ffffff;
 }
@@ -692,7 +677,6 @@ body {
 
 .about-column-left: {
   width: 660px;
-  min-height: 407px;
   padding: 0 20px;
   text-align: left;
   /*-----Временно для сетки-----*/ 
