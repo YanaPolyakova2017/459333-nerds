@@ -92,7 +92,6 @@ a {
 
 .features b {
   font-size: 55px;
-  line-height: 55px;
   font-weight: 500;
   color: #000000;
   text-transform: none;
@@ -136,6 +135,8 @@ a {
   background-color: #d7373b;
    
 }
+
+
 
 .services2-button {
   font-size: 16px;
@@ -217,7 +218,6 @@ a {
 
 .services-item h3 {
   font-size: 24px;
-  line-height: 30px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -240,10 +240,8 @@ a {
   background-color: #ffffff;
 }
 
-.about-column-left h3,
-.about-column-right h3 {
+.about-column-left h3 {
   font-size: 16px;
-  line-height: 24px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
@@ -251,23 +249,36 @@ a {
 }
  
 
+.about-column-right b {
+  font-size: 16px;
+  font-weight: 700;
+  color: #000000;
+  background-color: #ffffff;
+  text-transform: uppercase;
+}
+ 
+ 
+ 
+ 
 .page-title {
   font-size: 55px;
-  line-height: 55px;
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
 }
 
-.filters fieldset {
-  border: none
+.filters fieldset,
+.filters-1 fieldset{
+  border: none;
 }
 
-.filters ul {
+.filters ul,
+.filters-1 ul  {
   list-style: none;
   line-height: 20px;
 }
-.filters legend {
+.filters legend,
+.filters-1 legend {
   font-size: 18px;
   line-height: 30px;
   font-weight: 700;
@@ -292,7 +303,6 @@ a {
 
 .sort a {
   font-size: 14px;
-  line-height: 18px;
   font-weight: 400;
   color: #000000;
   background-color: #ffffff;
@@ -302,7 +312,6 @@ a {
 
 .sort p {
   font-size: 18px;
-  line-height: 18px;
   font-weight: 700;
   color: #000000;
   background-color: #ffffff;
@@ -352,7 +361,6 @@ a {
   color: #000000;
   background-color: #eeeeee;
   font-size: 18x;
-  line-height: 30px;
   font-weight: 700;	
   text-transform: uppercase;
 }
@@ -362,7 +370,6 @@ a {
   color: #283136;
   background-color: #eeeeee;
   font-size: 16x;
-  line-height: 18px;
   font-weight: 400;	
 }
 
@@ -401,7 +408,6 @@ a {
 
 .pagination-item a {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 500;
   color: #000000;
   background-color: #eeeeee;
@@ -430,8 +436,6 @@ a {
 }
 
 
-
-
 .main-footer {
   color: #283136;
   background-color: #ffffff;
@@ -439,7 +443,6 @@ a {
 
 .main-footer h4 {
   font-size: 18px;
-  line-height: 30px;
   font-weight: 700;
   color: #000000;
   text-transform: uppercase;
@@ -448,9 +451,13 @@ a {
 
 .main-footer p {
   font-size: 16px;
-  line-height: 18px;
   font-weight: 400;
+  color: #283136;
+  background-color: #ffffff;
 }
+
+
+
 
 .social-bottum {
   color: #ffffff;
@@ -467,16 +474,17 @@ a {
   background-color: #d7373b;
 }
 
-.footer-social b {
+.promo b {
   font-size: 36px;
   font-weight: 700;	
   color: #000000;
   background-color: #ffffff;
 }
 
+
+
  .modal-write h2 {
   font-size: 45px;
-  line-height: 45px;
   font-weight: 500;
   color: #000000;
   background-color: #ffffff;
@@ -553,3 +561,307 @@ a {
   .write-button {
   width: 260px;
 }
+
+
+
+/*------Сеточные стили------*/
+
+html,
+body {
+  min-width: 1440px;
+  min-height: 2476px;
+}
+
+.main-header: {
+  margin-bottom: 50px;
+  background-color: #eeeeee;
+  
+  /*-----Временно для сетки-----*/
+  min-height: 114px;
+  
+} 
+
+.main-navigation {
+  display: flex;
+  
+  align-items: center;
+  
+  /*-----Временно для сетки-----*/ 
+  min-height: 114px;
+  /*--background-color: #b56062;---*/
+}
+
+.main-navigation .container {
+  display: flex;
+  width: 1160;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+
+.main-header-logo {
+  width: 160px;
+  height: 65px;
+  padding: 49px 20px;
+  /*-----Временно для сетки-----*/ 
+  /*display: block;*/
+  /*--background-color: #2f8ab0;---*/
+}
+
+.site-navigation {
+  display: flex;
+  width: 440px;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  justify-content: space-between;
+  /*-----Временно для сетки-----*/ 
+  /*--background-color: #7ea4b4;---*/
+}
+
+.site-navigation a,
+.user-navigation a{
+  display: block;
+  
+  padding: 20px  20px;
+}
+
+.user-navigation {
+  width: 160px;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+  /*-----Временно для сетки-----*/ 
+  min-height: 65px;
+  /*--background-color: #efc84a;---*/
+
+}
+
+.features .container {
+  display: flex;
+  width: 1160px;
+  margin: 0 20px;
+  padding: 0;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+
+
+
+.text {
+  order: -1;
+  
+}
+
+.services-list {
+  display: flex;
+  margin: 0;
+  padding: 0 20px;
+  list-style: none;
+  justify-content: space-between;
+  margin-bottom: 122px;
+  /*-----Временно для сетки-----*/ 
+  min-height: 350px;
+  /*--background-color: #7ea4b4;---*/
+}
+.services-item {
+  
+  width: 300px;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+  /*-----Временно для сетки-----*/ 
+  min-height: 350px;
+}
+
+.about-us {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin-bottom: 130px;
+  
+  
+  /*-----Временно для сетки-----*/ 
+  
+  /*--background-color: #7ea4b4;--*/
+  
+}
+
+.about-column-left: {
+  width: 660px;
+  min-height: 407px;
+  padding: 0 20px;
+  text-align: left;
+  /*-----Временно для сетки-----*/ 
+  min-height: 407px;
+  /*background-color: #444444;--*/
+  
+  
+}
+
+.about-column-right: {
+  width: 360px;
+  padding: 0 20px;
+  /*-----Временно для сетки-----*/ 
+  min-height: 407px;
+  /*--background-color: #666666;--*/
+  
+}
+
+.main-partners {
+  display: flex;
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  list-style: none;
+}
+
+.main-partners a {
+  display: block;
+  
+  padding: 20px  20px;
+}
+
+
+.partners: {
+  width: 260px;
+  list-style: none;
+  
+  /*-----Временно для сетки-----*/ 
+  min-height: 180px;
+}
+
+
+.page-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px;
+  text-align: center;
+  width: 100%;
+   /*-----Временно для сетки-----*/ 
+  min-height: 55px;
+	
+}
+
+
+
+.filters-1 {
+  width: 260px;
+  /*-----Временно для сетки-----*/ 
+  min-height: 1830px;
+  
+}
+
+.catalog {
+  width: 760px;
+  /*-----Временно для сетки-----*/ 
+  min-height: 1915px;
+  
+}
+
+.catalog-colomns {
+  display: flex;
+  justify-content: space-between;
+}
+
+.catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 25px;
+  list-style: none;
+  
+}
+
+.catalog-item {
+  width: 360px;
+  margin-bottom: 33px;
+  margin-right: 40px;
+  
+  /*-----Временно для сетки-----*/ 
+  min-height: 620px;
+   
+}
+
+.catalog-item:nth-child(2n) {
+  margin-right: 0;
+}
+
+.pagination-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  /*-----Временно для сетки-----*/ 
+  min-height: 50px;   
+}
+
+.pagination-item {
+  
+  width: 50px;
+  margin-right: 10px;
+  
+ /*-----Временно для сетки-----*/ 
+  min-height: 50px;
+}
+
+.main-footer {
+  margin-top: 40px;
+
+  /*-----Временно для сетки-----*/ 
+  min-height: 715px;
+}
+
+.main-footer .container {
+  display: flex;
+  width: 1160;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  justify-content: space-between;
+}
+
+.footer-contacts {
+  margin: 0;
+  width: 320px;
+/*-----Временно для сетки-----*/ 
+  min-height: 310px;
+}
+
+.footer-social {
+  display: flex;
+  margin: 0;
+  width: 260px;
+  list-style: none;
+  align-items: center;
+  /*-----Временно для сетки-----*/ 
+  min-height: 80px;
+ /*-- background-color: #444444;--*/ 
+  
+  
+}
+
+.footer-social .social {
+  width: 80px;
+  
+  /*-----Временно для сетки-----*/ 
+  min-height: 80px;
+}
+.promo {
+  margin: 0;
+  width: 600px;
+  margin-right: 160px;
+/*-----Временно для сетки-----*/ 
+  min-height: 80px;
+/*--  background-color: #7ea4b4;--*/ 
+  
+  
+}
+
