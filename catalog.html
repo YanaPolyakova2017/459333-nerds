@@ -31,11 +31,23 @@
       <h1 class="page-title">Магазин готовых шаблонов</h1>
       <div class="catalog-colomns">
         <section class="filters-1">
-        <h2 class="visually-hidden">Фильтр товаров</h2>
+          <h2 class="visually-hidden">Фильтр товаров</h2>
           <form class="filter-1" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
-              <legend>Стоимость</legend>
-              <input type="range" min="0" max="15000" step="1" value="50"> 
+              <legend>Стоимость:</legend>
+              <div class="range-filter">
+              <div class="range-controls">
+                <div class="scale">
+                  <div class="bar" style="margin-left: 20%; width: 30%"></div>
+                </div>
+                <div class="toggle toggle-min"></div>
+                <div class="toggle toggle-max"></div>
+              </div>
+              <div class="price-controls">
+                <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                <label class="max-price">до <input name="max-price" type="text" value="15000"></label>
+              </div>
+            </div>
             </fieldset>
             <fieldset>
               <legend>Сетка</legend>
@@ -207,7 +219,7 @@
                 <section class="catalog-item-description">
                   <h3>
                     <a href="catalog-item.html">
-                      <span class="catalog-category">Кваст</span>
+                      <span class="catalog-category">Кваст</span><br>
                       <span class="catalog-item-title">Промо-сайт производителя крафтового кваса</span>
                     </a>
                   </h3>
