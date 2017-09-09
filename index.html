@@ -182,20 +182,23 @@
       <h2>Напишите нам</h2>
       <form class="write-us" action="https://echo.htmlacademy.ru" method="post">
         <div class="write-us-item">
-          <label for="form-name">Ваше имя:</label>
+          <p>
+		  <label for="form-name">Ваше имя:</label>
           <input id="form-name" type="text" name="form-name" value="" placeholder="Представьтесь, пожалуйста">
-        </div>
-        <div class="write-us-item">
-          <label for="form-mail">Ваш e-mail:</label>
+          </p>
+		  <p>
+		  <label for="form-mail">Ваш e-mail:</label>
           <input id="form-mail" type="email" name="form-mail" value="" placeholder="Для отправки ответа">
+		  </p>
         </div>
         <div class="write-us-item">
           <label for="form-text">Текст письма:</label>
-        <input  id="form-text" type="text" name="form-text" value="" placeholder="В свободной форме">
+        <textarea rows="6"  id="form-text"  type="text" name="form-text" value="" placeholder="В свободной форме"></textarea>
         </div>
         <button class="write-button button" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>
     </div>
+	<script src="js/script.js"></script>
   </body>
 </html>
