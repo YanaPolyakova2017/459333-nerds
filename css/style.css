@@ -691,7 +691,7 @@ a {
 
 .write-us-item input {
   font: inherit;
-  
+  box-sizing: border-box;
   background-color: #ffffff;
   border: 1px  solid #d7dcde;
 }
@@ -1364,7 +1364,7 @@ body {
 
 .modal.modal-write {
   position: absolute;
-  display: none; 
+  /*display: none;*/ 
   box-sizing: border-box;
   width: 960px;
   height: 590px;
@@ -1414,22 +1414,21 @@ body {
   padding-left: 15px;
   padding-top: 10px;
   width: 760px;
-  border-color: #d7dcde;
-  
+  border: 1px  solid #d7dcde;
 }
 
 .modal textarea:hover {
-  border-color: #b4b9bb;
+  border: 1px  solid #b4b9bb;
   
 }
 
 .modal textarea:focus {
-  border-color: #000000;
+  border: 1px  solid #000000;
   
 }
 
 .modal textarea:invalid {
-  border-color: #e74246;
+  border: 1px  solid #e74246;
   
 }
 
